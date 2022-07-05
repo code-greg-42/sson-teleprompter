@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+html {
+    color:azure;
+    background-color:black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sticky {
+    position:fixed;
+    top:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:inherit;
+    margin-top:10px;
+    background-color:rgb(42,42,42);
+    color:azure;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#sidebar {
+    right:0;
+    padding-right:2vw;
+    width:14vw;
 }
 
-.App-link {
-  color: #61dafb;
+.hidden {
+    display:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#textbox {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:blue;
+    width:80vw;
+    margin:auto;
+    font-size:48px;
+    letter-spacing:4px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:200%;
+    border-right: 16px ridge rgb(42,42,42);
+}
+
+#textbox-text {
+    padding-left:5vw;
+    padding-right:5vw;
+}
+
+#begin-text {
+    padding-top:10vh;
+    padding-right:5vw;
+    padding-left:5vw;
+    margin-bottom:0vh;
+}
+
+#timer-display {
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:10px;
+    width:inherit;
+}
+
+#interval-display {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    margin-bottom:5px;
+    padding-bottom:5px;
+}
+
+.interval-btn {
+    width:50%;
+    margin-top:0px;
+    font-size:24px;
+    background-color:rgb(42,42,42);
+    color:azure;
+}
+
+#file-upload {
+    display:grid;
+    position:fixed;
+    top:25%;
+    right:0;
+    width:14vw;
+    padding-right:2vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+
+#name-display {
+    color:azure;
+    position:fixed;
+    right:4em;
+    margin-top:6%;
+}
+
+#choose-file {
+    font-size:20px;
+    background-color:rgb(42,42,42);
+    color:azure;
+}
+
+#clear-btn {
+    width:inherit;
+    margin-top:10px;
+    font-size:20px;
+    color:azure;
+    background-color:rgb(42,42,42);
+}
+
+#header {
+    font-size:56px;
+    margin-left:5vw;
+}
+
+.btn, .interval-btn, #choose-file, #clear-btn {
+    border-radius:4px;
+}
+
+.btn:hover, .interval-btn:hover, #choose-file:hover, #clear-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(44, 44, 44, 0.401), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:rgba(52, 52, 52, 0.401);
+}
+
+.no-hover {
+    pointer-events: none;
 }
