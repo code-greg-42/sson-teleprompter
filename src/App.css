@@ -124,3 +124,20 @@ html {
 .no-hover {
     pointer-events: none;
 }
+
+#color-select {
+    margin-top:33%;
+}
+
+#font-color-select, #background-select, .color-label {
+    margin-bottom:1vh;
+}
+
+.color-label {
+    margin-left:1vw;
+}
+
+#large-button {
+    width:20vw;
+    height:20vh;
+}

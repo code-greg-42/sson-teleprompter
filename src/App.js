@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect} from "react";
 import { useScrollBy, useScrollTo } from "react-use-window-scroll";
-import Button from "./Button.js";
+import Sidebar from "./Sidebar.js";
 import Textbox from "./Textbox.js";
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
 
   const [timerId, setTimerId] = useState("");
   const [isScrolling, setIsScrolling] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(false);
   const [scrollInterval, setScrollInterval] = useState(29);
 
   const scrollBy = useScrollBy();
@@ -67,7 +66,7 @@ function App() {
   }
 
   return (<>
-    <Button onStartStop={useStartStop} timer={timer} isScrolling={isScrolling} onResetClick={handleResetClick} onAddIntervalClick={handleAddIntervalClick} onDecIntervalClick={handleDecIntervalClick} scrollInterval={scrollInterval} />
+    <Sidebar onStartStop={useStartStop} timer={timer} isScrolling={isScrolling} onResetClick={handleResetClick} onAddIntervalClick={handleAddIntervalClick} onDecIntervalClick={handleDecIntervalClick} scrollInterval={scrollInterval} />
     <Textbox />
   </>)
 }
